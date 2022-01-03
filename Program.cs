@@ -29,8 +29,8 @@ namespace DarkOFDM
             }
 
             //Init IQ channels
-            int bandwidth = 5000;
-            double spacing = 40;
+            int bandwidth = 10000;
+            double spacing = 46.87;
             int carriers = (int)(bandwidth / spacing);
             Func<Complex>[] iqs = new Func<Complex>[carriers];
             WaterfallGenerator wfg = new WaterfallGenerator("input.png");
